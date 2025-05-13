@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Área de Configurações</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .login {
+      display: block;
+    }
+    .conteudo {
+      display: none;
+    }
+    input, button {
+      margin: 5px;
+      padding: 8px;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login">
+    <h2>Área Restrita</h2>
+    <p>Digite a senha para acessar as configurações:</p>
+    <input type="password" id="senha">
+    <button onclick="verificarSenha()">Entrar</button>
+    <p id="erro" style="color:red;"></p>
+  </div>
+
+  <div class="conteudo">
+    <h1>Painel de Configurações</h1>
+
+    <h3>Nome do site</h3>
+    <input type="text" id="nomeSite" placeholder="Bijuterias Carol">
+    <button onclick="salvar('nome do site')">Salvar</button>
+
+    <h3>Email de contato</h3>
+    <input type="email" id="emailContato" placeholder="carolalmeida.c98@gmail.com">
+    <button onclick="salvar('email')">Salvar</button>
+
+    <h3>Mensagem da Página Inicial</h3>
+    <input type="text" id="mensagem" placeholder="Bem-vinda ao nosso site!">
+    <button onclick="salvar('mensagem')">Salvar</button>
+
+    <p id="mensagemSalva" style="color:green;"></p>
+  </div>
+
+  <script>
+    function verificarSenha() {
+      const senhaCorreta = "12432"; // Senha alterada aqui
+      const senhaDigitada =
