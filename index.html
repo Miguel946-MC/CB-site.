@@ -1,58 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bijuterias elegantes e exclusivas para você!">
-    <title>Bijuterias da Carol</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bijuterias Carol</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #f2f2f2;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #e8b4d0;
+    }
+
+    nav {
+      background-color: #2a2a2a;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .produto {
+      background-color: #292929;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .produto h2 {
+      color: #e8b4d0;
+    }
+
+    .produto p {
+      color: #ccc;
+    }
+
+    .botao {
+      background-color: #e8b4d0;
+      color: #121212;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .botao:hover {
+      background-color: #f0cce1;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Bijuterias Carol</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="sobre">
-        <h2>Sobre a loja</h2>
-        <p>A Carol oferece bijuterias exclusivas feitas com carinho, elegância e qualidade. Aqui você encontra peças que combinam com todos os estilos.</p>
-    </section>
+  <header>
+    <h1>Bijuterias Carol</h1>
+  </header>
 
-    <section id="produtos">
-        <h2>Produtos</h2>
-        <div class="produto">
-            <img src="imagem1.jpg" alt="Bijuteria 1">
-            <p>Descrição do produto 1</p>
-        </div>
-        <div class="produto">
-            <img src="imagem2.jpg" alt="Bijuteria 2">
-            <p>Descrição do produto 2</p>
-        </div>
-        <div class="produto">
-            <img src="imagem3.jpg" alt="Bijuteria 3">
-            <p>Descrição do produto 3</p>
-        </div>
-    </section>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+  </nav>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Para mais informações, entre em contato com a gente:</p>
-        <ul>
-            <li>Email: carolalmeida.c98@gmail.com</li>
-            <li>Telefone: (XX) XXXX-XXXX</li>
-        </ul>
-    </section>
+  <main>
+    <h2>Bem-vinda ao nosso site!</h2>
+    <p>Encontre bijuterias artesanais feitas com carinho e estilo.</p>
 
-    <footer>
-        <p>&copy; 2025 Bijuterias Carol. Todos os direitos reservados.</p>
-    </footer>
+    <div class="produto">
+      <h2>Colar Rosa</h2>
+      <p>Feito à mão com pedras delicadas e acabamento refinado.</p>
+      <button class="botao">Comprar</button>
+    </div>
+
+    <div class="produto">
+      <h2>Pulseira Elegante</h2>
+      <p>Perfeita para todas as ocasiões. Ajustável e charmosa.</p>
+      <button class="botao">Comprar</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Contato: <a href="mailto:carolalmeida.c98@gmail.com" style="color:#ccc;">carolalmeida.c98@gmail.com</a></p>
+    <p>&copy; 2025 Bijuterias Carol</p>
+  </footer>
+
 </body>
 </html>
